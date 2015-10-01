@@ -1,0 +1,108 @@
+nav#desktopNav{
+
+  display: inline-block;
+  width: 100%;
+	a.menu{
+		display: none;
+	}
+
+	margin-top: 10px;
+	height: 55px;
+	border: 2px solid $border-nav-color;
+	background: $background-nav-color;
+
+	ul{
+		display: table;
+        width: 100%;
+        line-height: 55px;
+
+		li{
+			display: table-cell;
+			
+			a{
+				font-size: 26px;
+				display: block;
+			  text-align: center;
+			  margin: 0 28px;
+			}
+		}
+
+	}
+	
+}
+
+@include deskop_tablets{
+
+  nav#desktopNav{
+   
+    ul{
+      
+      li{
+       
+        a{
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }  
+
+}
+
+@include phone{
+
+  nav#desktopNav:hover ul li{
+ 	display: block;
+  }
+
+  nav#desktopNav{
+
+    display: block;
+  	background: $secondary-color;
+    border: 0;
+    margin: 0 auto;
+    width: 125px;
+    height: auto;
+    padding-top: 20px;
+
+    a.menu{
+    	display: block;
+    	background: $background-nav-color;
+  		border: 2px solid $border-nav-color;
+  		border-bottom: 0;
+  		font-size: 22px;
+	    display: block;
+	    text-align: center;
+	    padding: 10px;
+	    cursor: auto;
+    }
+
+  	ul{
+  		display: block;
+  		line-height: 45px;
+
+  		li{
+  			display: none;
+  			border-top: 2px solid $border-nav-color;
+
+  			a{
+  				margin: 0;
+  				font-size: 20px;
+  			}
+  		}
+   	}
+  }
+
+  nav#desktopNav > ul {
+		width: 125px;
+  	text-align: center;
+    background: $background-nav-color;
+  	border: 2px solid $border-nav-color;
+  	border-top: 0;
+  }
+
+}
+
+
+
+

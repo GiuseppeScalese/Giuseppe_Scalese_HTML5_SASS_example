@@ -1,0 +1,468 @@
+/* CSS Reset */
+/* line 13, ../scss/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 28, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 31, ../scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../scss/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../scss/base/_reset.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 43, ../scss/base/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 47, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, ../scss/base/_reset.scss */
+a, u {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 57, ../scss/base/_reset.scss */
+a {
+  outline: none;
+}
+
+/* line 61, ../scss/base/_reset.scss */
+a img {
+  outline: none;
+}
+
+/* line 65, ../scss/base/_reset.scss */
+a:hover {
+  color: #e9474b;
+  -webkit-transition: color 0.4s ease, text-decoration 0.4s ease;
+  -moz-transition: color 0.4s ease, text-decoration 0.4s ease;
+  -o-transition: color 0.4s ease, text-decoration 0.4s ease;
+  -ms-transition: color 0.4s ease, text-decoration 0.4s ease;
+  transition: color 0.4s ease, text-decoration 0.4s ease;
+}
+
+/* line 70, ../scss/base/_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 74, ../scss/base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 1, ../scss/base/_base.scss */
+body {
+  font-family: 'Droid Sans', Verdana, sans-serif, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5em;
+  background: white;
+}
+
+/* line 10, ../scss/base/_base.scss */
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  /* line 17, ../scss/base/_base.scss */
+  #wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 24, ../scss/base/_base.scss */
+  #wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+/* line 1, ../scss/layout/_header.scss */
+header#mainHeader {
+  background: white;
+  color: red;
+  height: 90px;
+  margin-top: 30px;
+}
+/* line 8, ../scss/layout/_header.scss */
+header#mainHeader h1#companyName {
+  padding: 0px 20px 20px 0;
+  font-size: 50px;
+  display: inline;
+  font-style: italic;
+  color: black;
+}
+/* line 15, ../scss/layout/_header.scss */
+header#mainHeader h1#companyName .logoImage {
+  vertical-align: middle;
+}
+/* line 20, ../scss/layout/_header.scss */
+header#mainHeader #mediaList {
+  float: right;
+  overflow: auto;
+}
+/* line 24, ../scss/layout/_header.scss */
+header#mainHeader #mediaList li {
+  display: inline;
+  padding-right: 10px;
+}
+/* line 29, ../scss/layout/_header.scss */
+header#mainHeader #mediaList li:last-child {
+  padding-right: 0px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  /* line 40, ../scss/layout/_header.scss */
+  header#mainHeader h1#companyName {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 48, ../scss/layout/_header.scss */
+  header#mainHeader {
+    margin-top: 0px;
+    height: 65px;
+    margin-bottom: 15px;
+  }
+  /* line 53, ../scss/layout/_header.scss */
+  header#mainHeader h1#companyName {
+    font-size: 30px;
+  }
+  /* line 57, ../scss/layout/_header.scss */
+  header#mainHeader #mediaList {
+    display: none;
+  }
+}
+/* line 1, ../scss/layout/_navigation.scss */
+nav#desktopNav {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  height: 55px;
+  border: 2px solid lightgrey;
+  background: whitesmoke;
+}
+/* line 5, ../scss/layout/_navigation.scss */
+nav#desktopNav a.menu {
+  display: none;
+}
+/* line 14, ../scss/layout/_navigation.scss */
+nav#desktopNav ul {
+  display: table;
+  width: 100%;
+  line-height: 55px;
+}
+/* line 19, ../scss/layout/_navigation.scss */
+nav#desktopNav ul li {
+  display: table-cell;
+}
+/* line 22, ../scss/layout/_navigation.scss */
+nav#desktopNav ul li a {
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  margin: 0 28px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  /* line 42, ../scss/layout/_navigation.scss */
+  nav#desktopNav ul li a {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 54, ../scss/layout/_navigation.scss */
+  nav#desktopNav:hover ul li {
+    display: block;
+  }
+
+  /* line 58, ../scss/layout/_navigation.scss */
+  nav#desktopNav {
+    display: block;
+    background: white;
+    border: 0;
+    margin: 0 auto;
+    width: 125px;
+    height: auto;
+    padding-top: 20px;
+  }
+  /* line 68, ../scss/layout/_navigation.scss */
+  nav#desktopNav a.menu {
+    display: block;
+    background: whitesmoke;
+    border: 2px solid lightgrey;
+    border-bottom: 0;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: auto;
+  }
+  /* line 80, ../scss/layout/_navigation.scss */
+  nav#desktopNav ul {
+    display: block;
+    line-height: 45px;
+  }
+  /* line 84, ../scss/layout/_navigation.scss */
+  nav#desktopNav ul li {
+    display: none;
+    border-top: 2px solid lightgrey;
+  }
+  /* line 88, ../scss/layout/_navigation.scss */
+  nav#desktopNav ul li a {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  /* line 96, ../scss/layout/_navigation.scss */
+  nav#desktopNav > ul {
+    width: 125px;
+    text-align: center;
+    background: whitesmoke;
+    border: 2px solid lightgrey;
+    border-top: 0;
+  }
+}
+/* line 1, ../scss/layout/_footer.scss */
+footer {
+  height: 50px;
+  background: #f4f4f4;
+  border: 2px solid lightgrey;
+  clear: both;
+}
+/* line 8, ../scss/layout/_footer.scss */
+footer #mediaListMobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 18, ../scss/layout/_footer.scss */
+  footer #mediaListMobile {
+    display: block;
+    padding: 7px 60px 0 60px;
+    padding-left: 60px;
+    padding-top: 7px;
+    text-align: center;
+  }
+  /* line 26, ../scss/layout/_footer.scss */
+  footer #mediaListMobile li {
+    display: inline;
+    padding-right: 20%;
+  }
+  /* line 31, ../scss/layout/_footer.scss */
+  footer #mediaListMobile li:last-child {
+    padding-right: 0px;
+  }
+}
+/* line 1, ../scss/layout/_article.scss */
+article#mainArticle {
+  width: 76%;
+  overflow: auto;
+  margin: 15px 15px 20px 0;
+  float: left;
+}
+/* line 8, ../scss/layout/_article.scss */
+article#mainArticle .firstPar, article#mainArticle .secondPar {
+  font-size: 18px;
+  line-height: 23px;
+}
+/* line 13, ../scss/layout/_article.scss */
+article#mainArticle .firstPar {
+  display: inline;
+  width: 70%;
+}
+/* line 18, ../scss/layout/_article.scss */
+article#mainArticle .secondPar {
+  clear: both;
+  margin-top: 20px;
+}
+/* line 23, ../scss/layout/_article.scss */
+article#mainArticle .moreNavMobile {
+  display: none;
+}
+/* line 27, ../scss/layout/_article.scss */
+article#mainArticle .moreNav, article#mainArticle .moreNavMobile {
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+/* line 32, ../scss/layout/_article.scss */
+article#mainArticle .moreNav h3, article#mainArticle .moreNavMobile h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+/* line 37, ../scss/layout/_article.scss */
+article#mainArticle .moreNav ul, article#mainArticle .moreNavMobile ul {
+  margin: 10px 0 0 15px;
+  list-style-type: disc;
+}
+/* line 41, ../scss/layout/_article.scss */
+article#mainArticle .moreNav ul li, article#mainArticle .moreNavMobile ul li {
+  padding-bottom: 5px;
+}
+/* line 45, ../scss/layout/_article.scss */
+article#mainArticle .moreNav ul li a, article#mainArticle .moreNavMobile ul li a {
+  font-size: 17px;
+}
+/* line 51, ../scss/layout/_article.scss */
+article#mainArticle header {
+  margin-top: 30px;
+}
+/* line 54, ../scss/layout/_article.scss */
+article#mainArticle header h2 {
+  font-size: 35px;
+  line-height: 40px;
+}
+/* line 58, ../scss/layout/_article.scss */
+article#mainArticle header p {
+  font-size: 17px;
+  padding: 10px 0;
+}
+/* line 62, ../scss/layout/_article.scss */
+article#mainArticle header p a {
+  padding-left: 5px;
+}
+/* line 68, ../scss/layout/_article.scss */
+article#mainArticle figure {
+  padding-bottom: 20px;
+}
+/* line 71, ../scss/layout/_article.scss */
+article#mainArticle figure img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  /* line 81, ../scss/layout/_article.scss */
+  article#mainArticle {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 89, ../scss/layout/_article.scss */
+  article#mainArticle {
+    width: 100%;
+    margin-top: 0px;
+  }
+  /* line 93, ../scss/layout/_article.scss */
+  article#mainArticle .firstPar, article#mainArticle .secondPar {
+    width: 100%;
+    font-size: 16px;
+  }
+  /* line 100, ../scss/layout/_article.scss */
+  article#mainArticle header h2 {
+    font-size: 28px;
+  }
+  /* line 104, ../scss/layout/_article.scss */
+  article#mainArticle header p {
+    font-size: 15px;
+    padding-top: 0;
+  }
+  /* line 110, ../scss/layout/_article.scss */
+  article#mainArticle .moreNav {
+    display: none;
+  }
+  /* line 114, ../scss/layout/_article.scss */
+  article#mainArticle .moreNavMobile {
+    display: block;
+    padding-left: 0px;
+    padding-top: 20px;
+    float: left;
+  }
+  /* line 122, ../scss/layout/_article.scss */
+  article#mainArticle .moreNavMobile ul li a {
+    font-size: 16px;
+  }
+}
+/* line 1, ../scss/layout/_aside.scss */
+aside.sideContent {
+  width: 22%;
+  float: right;
+  line-height: 40px;
+  padding-top: 20px;
+}
+/* line 8, ../scss/layout/_aside.scss */
+aside.sideContent h3 {
+  font-size: 23px;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+/* line 14, ../scss/layout/_aside.scss */
+aside.sideContent img {
+  max-width: 100%;
+}
+
+/* line 19, ../scss/layout/_aside.scss */
+aside.first {
+  padding-top: 55px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  /* line 25, ../scss/layout/_aside.scss */
+  aside.sideContent {
+    float: left;
+    width: 30%;
+  }
+
+  /* line 30, ../scss/layout/_aside.scss */
+  aside.first {
+    padding-top: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 38, ../scss/layout/_aside.scss */
+  aside {
+    display: none;
+  }
+}

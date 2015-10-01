@@ -1,0 +1,41 @@
+aside.sideContent{
+	
+	width: 22%;
+	float:right;
+	line-height: 40px;
+	padding-top: 20px;
+ 
+	h3{
+		font-size: 23px;
+		padding-bottom: 10px;
+		line-height: 30px;
+	}
+
+	img{
+		max-width: 100%;
+	}
+}
+
+aside.first{
+	padding-top: 55px;
+}
+
+@include deskop_tablets{
+
+	aside.sideContent{
+		float: left;
+		width: 30%
+	}
+
+	aside.first{
+		padding-top: 20px;
+		margin-right: 20px;
+	}
+}
+
+
+@include phone{
+  aside{
+  	display: none; 
+  }
+}

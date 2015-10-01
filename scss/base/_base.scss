@@ -1,0 +1,29 @@
+body{
+  font-family: 'Droid Sans', Verdana, sans-serif, Arial;
+  font-weight:400; 
+  font-size: 14px;
+  color:$primary-color;
+  line-height: 1.5em;
+  background: $secondary-color;
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+@include deskop_tablets{
+
+  #wrapper{
+    width: 90%;
+  }
+
+}
+
+@include phone{
+  #wrapper{
+    width: 100%;
+    padding: 10px;
+  }
+}
+

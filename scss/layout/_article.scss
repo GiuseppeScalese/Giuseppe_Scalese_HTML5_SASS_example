@@ -1,0 +1,130 @@
+article#mainArticle{
+
+	width: 76%;
+	overflow: auto;
+	margin: 15px 15px 20px 0;
+	float: left;
+
+	.firstPar, .secondPar{
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.firstPar{
+		display: inline;
+		width: 70%;
+	}
+
+	.secondPar{
+		clear:both;
+		margin-top: 20px;
+	}
+
+	.moreNavMobile{
+		display: none;
+	}
+
+	.moreNav,.moreNavMobile{
+		float: right;
+		width: 30%;
+		padding-left: 10px;
+
+		h3{
+			font-size: 25px;
+			font-weight: 700;
+		}
+
+		ul{
+			margin: 10px 0 0 15px;
+			list-style-type:disc;
+
+			li{
+				padding-bottom: 5px;
+			}
+			
+			li a{
+				font-size: 17px;
+			}
+		}
+	}
+	
+	header{
+		margin-top: 30px;
+
+		h2{
+			font-size: 35px;
+			line-height: 40px; 
+		}
+		p{
+			font-size: 17px;
+			padding: 10px 0;
+
+			a{
+				padding-left: 5px;
+			}
+		}
+	}
+
+	figure{
+		padding-bottom: 20px;
+
+		img{
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+}
+
+
+@include deskop_tablets{
+
+  article#mainArticle{
+  	width: 100%;
+  }
+
+}
+
+@include phone{
+
+  article#mainArticle{
+  	width: 100%;
+  	margin-top: 0px;
+
+  	.firstPar, .secondPar{		
+		width: 100%;
+		font-size: 16px;
+	}
+
+  	header{
+		
+		h2{ 
+			font-size: 28px;
+		}
+
+		p{
+			font-size: 15px;
+			padding-top: 0;
+		}
+	}
+
+	.moreNav{
+		display: none;
+	}
+
+	.moreNavMobile{
+		display: block;
+		padding-left: 0px;
+		padding-top: 20px;
+		float: left;
+
+		ul{
+			li{
+				a{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+  }
+}

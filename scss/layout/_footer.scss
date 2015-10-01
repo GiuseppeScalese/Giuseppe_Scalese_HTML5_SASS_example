@@ -1,0 +1,36 @@
+footer{
+	
+	height: 50px;
+	background: $nav-footer-color;
+	border: 2px solid $border-nav-color;
+	clear: both;
+
+	#mediaListMobile{
+		display: none;
+	}
+
+}
+
+@include phone{
+
+	footer{
+
+		#mediaListMobile{
+
+			display: block;
+			padding: 7px 60px 0 60px;
+			padding-left: 60px;
+			padding-top: 7px;
+			text-align: center;
+
+			li{
+			  display: inline;
+			  padding-right: 20%;
+			}
+
+			li:last-child{
+			  padding-right: 0px;
+			}
+		}
+	}
+}

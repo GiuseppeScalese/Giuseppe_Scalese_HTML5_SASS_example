@@ -1,0 +1,64 @@
+header#mainHeader{
+	
+	background: $secondary-color;
+	color:red;
+	height: 90px;
+	margin-top: 30px;
+
+	h1#companyName{
+		padding: 0px 20px 20px 0;
+		font-size: 50px;
+		display: inline;
+		font-style: italic;
+		color:$primary-color;
+
+		.logoImage{
+			vertical-align: middle;
+	    }	
+	}
+
+	#mediaList{
+		float:right;
+		overflow: auto;
+		
+		li{
+			display: inline;
+			padding-right: 10px;
+		}
+
+		li:last-child{
+			padding-right: 0px;
+
+		}
+	}
+}
+
+@include deskop_tablets{
+
+	header#mainHeader{
+
+		h1#companyName{
+			font-size: 38px;
+		}
+	}
+}
+
+@include phone{
+
+	header#mainHeader{
+		margin-top: 0px;
+		height: 65px;
+		margin-bottom: 15px;
+
+	  h1#companyName{
+	  	font-size: 30px;
+	  }
+
+	  #mediaList{
+	  	display: none; 
+	  }
+
+	}
+}
+
+
